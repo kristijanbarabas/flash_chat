@@ -196,7 +196,7 @@ class MessagesStream extends StatelessWidget {
             );
             messageWidgets.add(messageWidget);
             // sort the messages by time they've been sent
-
+            messageWidgets.sort((a, b) => b.time.compareTo(a.time));
           }
           // returning a column with all the data from firebase db
           // OUR LIST VIEW THAT CONTAINES MESSAGES SHOW ON THE SCREEN
