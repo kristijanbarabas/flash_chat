@@ -7,10 +7,12 @@ const kSendButtonTextStyle = TextStyle(
 );
 
 const kMessageTextFieldDecoration = InputDecoration(
-  contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-  hintText: 'Type your message here...',
-  border: InputBorder.none,
-);
+    contentPadding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+    border: InputBorder.none,
+    hintText: 'Type your message here...',
+    hintStyle: TextStyle(
+      fontSize: 16.0,
+    ));
 
 const kMessageContainerDecoration = BoxDecoration(
   border: Border(
@@ -49,3 +51,7 @@ const kTextFieldDecoration = InputDecoration(
     borderRadius: BorderRadius.all(Radius.circular(32.0)),
   ),
 );
+
+// messages
+
+const kMessageSenderStyle = TextStyle(fontSize: 12.0, color: Colors.black54);
